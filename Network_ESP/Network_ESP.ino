@@ -8,7 +8,7 @@
 
 
 const char* ssid = "Personal Wi-Fi";
-const char* password = "94489537534";
+const char* password = "password";
 String url = "";
 
 const uint16_t node_address_set[10] = { 00, 02, 05, 012, 015, 022, 025, 032, 035, 045 };
@@ -149,7 +149,7 @@ void handle_T(RF24NetworkHeader& header){
   xData = got_Voltage[0];
   yData = got_Voltage[1];
   Serial.println("Recived A0 Voltage: "+String(xData)+ "  A1 Voltage: "+String(yData)+" From  "+String(header.from_node));
-  url="http://airqualitysensor1.000webhostapp.com/espPostData.php?api_key=tPmAT5Ab3j7F9&Location="+String(header.from_node)+"&CO="+String(xData)+"&NO="+String(yData);
+  url="http://airqualitysensor1.000webhostapp.com/espPostData.php?api_key=mAT5Ab3j7F9&Location="+String(header.from_node)+"&CO="+String(xData)+"&NO="+String(yData);
 
 HTTPClient http;
 url.replace("\r", "");
