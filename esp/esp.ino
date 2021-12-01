@@ -15,7 +15,7 @@ RF24 radio(2,4);
 RF24Network network(radio);
 RF24Mesh mesh(radio,network);
 const char* ssid = "Personal Wi-Fi";
-const char* password = "94489537534";
+const char* password = "password";
 uint32_t displayTimer = 0;
 
 void setup() {
@@ -46,7 +46,7 @@ void loop() {
   yData = got_Voltage[1];
   location = got_Voltage[2];
   Serial.println("Recived A0 Voltage: "+String(xData)+ "  A1 Voltage: "+String(yData)+" From  "+String(location));
-  url="http://airqualitysensor1.000webhostapp.com/espPostData.php?api_key=tPmAT5Ab3j7F9&Location="+String(location)+"&CO="+String(xData)+"&NO="+String(yData);
+  url="http://airqualitysensor1.000webhostapp.com/espPostData.php?api_key=mAT5Ab3j7F9&Location="+String(location)+"&CO="+String(xData)+"&NO="+String(yData);
 
 HTTPClient http;
 url.replace("\r", "");

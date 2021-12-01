@@ -1,9 +1,9 @@
 <?php
     $servername = "localhost";
-    $dbname = "id15814343_airquality";
-    $username = "id15814343_jkt";
-    $password = "uJ@[x<D)e9S!|T{G";
-    $api_key_value = "tPmAT5Ab3j7F9";
+    $dbname = "5814343_airquality";
+    $username = "5814343_jkt";
+    $password = "J@[x<D)e9S!|T{G";
+    $api_key_value = "mAT5Ab3j7F9";
     $api_key= $Location = $CO =$NO = "";
 
   if ($_SERVER["REQUEST_METHOD"] == "GET") {

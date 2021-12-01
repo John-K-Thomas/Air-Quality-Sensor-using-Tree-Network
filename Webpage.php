@@ -1,9 +1,9 @@
 
 <?php
     $servername = "localhost";
-    $dbname = "id15814343_airquality";
-    $username = "id15814343_jkt";
-    $password = "uJ@[x<D)e9S!|T{G";
+    $dbname = "5814343_airquality";
+    $username = "5814343_jkt";
+    $password = "J@[x<D)e9S!|T{G";
     function getAllReadings($limit , $CloseL) 
     {
         global $servername, $username, $password, $dbname;
